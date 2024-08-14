@@ -25,7 +25,7 @@ app.get('/createUser', async (req,res)=>
     let newUser = new User();
     newUser.name = 'ahmed';
     newUser.age = 26;
-    newUser.email = "ahmed@hotmail.com";
+    newUser.email = "ahmedali@hotmail.com";
     newUser.salary = 2700;
 
     await newUser.save();
