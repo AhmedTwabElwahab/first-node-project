@@ -20,6 +20,14 @@ app.get('/',(req,res)=>
     });
 });
 
+app.get('/info',(req,res)=>
+{
+    res.render('home.ejs',{
+        string:"Welcome in info page",
+        p:"hello my friend"
+    });
+});
+
 app.get('/createUser', async (req,res)=>
 {
     let newUser = new User();
@@ -33,6 +41,6 @@ app.get('/createUser', async (req,res)=>
     res.send('user created');
 });
 
-app.listen(4900,()=>{
-    console.log('server start in port 4900');
+app.listen(3000,()=>{
+    console.log('server start in port 3000');
 });
