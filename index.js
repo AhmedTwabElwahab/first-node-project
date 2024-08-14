@@ -28,6 +28,19 @@ app.get('/info',(req,res)=>
     });
 });
 
+app.get('/users/:id', async(req,res)=>
+{
+    const id = req.params.id;
+    const user = await User.findById(id);
+    res.json({user});
+});
+
+app.get('/users', async(req,res)=>
+{
+    const users = await User.find();
+    res.json({users});
+});
+
 app.get('/createUser', async (req,res)=>
 {
     let newUser = new User();
@@ -40,6 +53,8 @@ app.get('/createUser', async (req,res)=>
 
     res.send('user created');
 });
+
+
 
 app.listen(3000,()=>{
     console.log('server start in port 3000');
