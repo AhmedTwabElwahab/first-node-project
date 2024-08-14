@@ -24,7 +24,7 @@ app.get('/info',(req,res)=>
 {
     res.render('home.ejs',{
         string:"Welcome in info page",
-        p:"hello my friend"
+        p:"hello my son in info page"
     });
 });
 
