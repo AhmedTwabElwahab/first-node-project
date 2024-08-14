@@ -1,0 +1,16 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "create node backend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "ENG/AhmedTawab",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  }
+}
